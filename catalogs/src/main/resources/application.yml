@@ -2,3 +2,7 @@ server.port: 8081
 
 spring:
   application.name: "catalog"
+
+customer:
+  ribbon:
+    listOfServers: "localhost:8082"
