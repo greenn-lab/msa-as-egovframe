@@ -1,0 +1,3 @@
+###
+GET {{host}}/catalogs/customer-info/1234
+
