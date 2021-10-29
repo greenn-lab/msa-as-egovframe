@@ -6,3 +6,6 @@
 ## 참조
 [표준프레임워크]MSA_적용_개발_가이드_v1.2.0.pdf
  - https://egovframe.go.kr/home/ntt/nttRead.do?pagerOffset=0&searchKey=&searchValue=&menuNo=76&bbsId=171&nttId=1809
+
+## Conclusion
+하다 보니 표준프레임웍은 빼버렸네요. 😅

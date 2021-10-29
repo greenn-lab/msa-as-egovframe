@@ -1,2 +1,8 @@
 ###
 GET {{host}}/catalogs/customer-info/1234
+
+###
+GET {{host}}/actuator/env
+
+###
+POST {{host}}/actuator/refresh

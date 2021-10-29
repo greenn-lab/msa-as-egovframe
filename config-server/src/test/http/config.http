@@ -1,0 +1,4 @@
+GET http://localhost:8888/actuator/env
+
+###
+POST http://localhost:8888/actuator/refresh

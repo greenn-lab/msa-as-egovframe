@@ -2,17 +2,22 @@ package io.github.greennlab.msa.catalogs;
 
 import io.github.greennlab.msa.catalogs.service.CustomerApiService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RefreshScope
 @RequestMapping("catalogs/customer-info")
 @RequiredArgsConstructor
 public class CatalogsController {
 
   private final CustomerApiService service;
+
+  private final Environment env;
 
   @GetMapping("{customerId}")
   public String getCustomerInfo(@PathVariable String customerId) {
@@ -22,6 +27,11 @@ public class CatalogsController {
         customerId,
         System.currentTimeMillis(),
         info);
+  }
+
+  @GetMapping("env")
+  public String getEnvironments(String property) {
+    return env.getProperty(property);
   }
 
 }

@@ -4,3 +4,11 @@ spring:
   application.name: "config-server"
 
   profiles.active: "native"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "env"
+          - "refresh"
