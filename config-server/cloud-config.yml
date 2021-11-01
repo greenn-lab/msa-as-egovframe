@@ -1,0 +1,8 @@
+spring.profiles: "development"
+test:
+  hi: "ABC"
+
+---
+spring.profiles: "production"
+test:
+  hi: "DEF"
