@@ -2,3 +2,12 @@ GET http://localhost:8888/actuator/env
 
 ###
 POST http://localhost:8888/actuator/refresh
+
+# cloud config
+###
+POST http://localhost:8888/cloud-config/development/config-server
+#                         /{filename}  /{profile}  /{branch}
+#                                                  if omitted branch, then default "master"
+
+###
+POST http://localhost:8888/cloud-config/production/config-server
