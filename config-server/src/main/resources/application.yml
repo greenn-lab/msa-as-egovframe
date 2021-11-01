@@ -3,7 +3,7 @@ server.port: 8888
 spring:
   application.name: "config-server"
 
-  profiles.active: "native"
+  profiles.active: "native" # required "native" keyword!
 
 management:
   endpoints:
