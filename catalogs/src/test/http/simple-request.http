@@ -6,3 +6,7 @@ GET {{host}}/actuator/env
 
 ###
 POST {{host}}/actuator/refresh
+
+###
+POST {{host}}/actuator/bus-refresh
+

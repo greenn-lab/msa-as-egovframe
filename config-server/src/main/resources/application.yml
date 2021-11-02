@@ -3,14 +3,20 @@ server.port: 8888
 spring:
   application.name: "config-server"
 
-  profiles.active: "native" # required "native" keyword!
+#  profiles.active: "native" # required "native" keyword!
 
   cloud:
     config:
       server:
         git:
-          uri: "https://github.com/greenn-lab/msa-as-egovframe"
-          search-paths: "config-server"
+          uri: "https://github.com/greenn-lab/xx"
+
+
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "cc"
+    password: "cc"
 
 
 management:
@@ -19,4 +25,3 @@ management:
       exposure:
         include:
           - "env"
-          - "refresh"
